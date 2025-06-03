@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  font-size: 20px;
+  text-align: center;
+}
+
+#logo {
+  width: 140px;
+  margin-top: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#bold {
+  color: #000;
+  font-weight: 600;
+}
+
+p {
+  color: hsl(209, 33%, 12%);
+}
+
+#subscribe {
+  margin: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#emailForm{
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+#email {
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+#notify {
+  width: 150px;
+  height: 40px;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 2px 7px hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+
+#notify:hover {
+  opacity: 0.8;
+}
+
+#error{
+  color: hsl(354, 100%, 66%);
+  width: 200px;
+  font-size: 11px;
+  text-align: left;
+  padding-left:10px ;
+  margin-top: 5px;
+}
+
+#dashboard {
+  max-width: 700px;
+  width: 100%;
+}
+
+footer {
+  padding: 40px;
+}
+
+#socials {
+  margin-bottom: 30px;
+}
+
+.icon {
+  border: 1px solid hsla(0, 0%, 59%, 0.5);
+  border-radius: 50%;
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: hsl(223, 87%, 63%);
+  width: 15px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  opacity: 0.8;
+}
+
+footer p {
+  color: hsl(0, 0%, 59%);
+  font-size: 15px;
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  #subscribe{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #emailForm{
+    margin: 0;
+  }
+
+  #email {
+    width: 200px;
+  }
+
+  #notify {
+    width: 220px;
+  } 
+
+  #error{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  #dashboard {
+    width: 325px;
+  }
+}
+
+@media (max-width: 350px) {
+  #dashboard {
+    width: 250px;
+  }
+}
